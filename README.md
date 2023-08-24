@@ -1,12 +1,10 @@
-# laravel_erp
+# Laravel ERP
 
-ERP WorkerCPF Expression des Besoins pour le développement de WorkerCPF 
+## Expression des Besoins pour le développement de WorkerCPF 
 
 L'entreprise gère actuellement ses activités à l'aide d'un ensemble de feuilles de calcul Excel et souhaite abandonner ce système et développer une application web pour le remplacer. 
 
-L’entreprise  souhaite  que  l'application  ne  soit  accessible  qu'aux  utilisateurs 
-
-enregistrés. 
+L’entreprise  souhaite  que  l'application  ne  soit  accessible  qu'aux  utilisateurs enregistrés. 
 
 Les utilisateurs auront accès aux différentes vues et fonctionnalités de l'application en fonction de leurs rôles. 
 
@@ -14,24 +12,19 @@ Lorsque  les  actions  effectuées  par  l'application  doivent  être  communiq
 
 Le service Ressources Humaines souhaiterait disposer d'un module pour la gestion des demandes de congés. Ce module doit notifier le responsable RH par e-mail à chaque fois qu'une nouvelle demande de congé est générée. 
 
-Résumé du projet 
+## Résumé du projet 
 
-Développement de divers modules pour l'application ERP (Enterprise Resource Planning) 
-
-de l'entreprise : 
+Développement de divers modules pour l'application ERP (Enterprise Resource Planning) de l'entreprise : 
 
 - Gestion des utilisateurs de l'application. Permet la création et la gestion des utilisateurs et des rôles ainsi que la création et la gestion des permissions attribuées aux rôles. 
 - Gestion des clients de l'entreprise. Permet la création et la gestion des fichiers clients de l'entreprise ainsi que leur importation depuis le système de gestion des clients actuel. 
 - Gestion des projets de l'entreprise. Ce module offre une vue d'ensemble des projets de l'entreprise avec des alertes visuelles pour indiquer si un projet a atteint sa charge maximale prévue ou s'il l'a dépassée. Lorsqu'un projet est créé, modifié ou  supprimé,  l'application  envoie  automatiquement  des  e-mails  à  tous  les utilisateurs liés au projet. 
 - Gestion  des  contrats  de  support  de  l'entreprise,  ce  module  offre  les  mêmes fonctionnalités que le module de gestion des projets. 
 - Compte rendu d’activité (CRA). Ce module est un outil de rapport consistant à justifier l’ensemble du travail accompli sur une période par un consultant, porté pour le compte d’un client, éventuellement lié à un projet ou à un contact de soutien appartenant au client. 
-- Gestion des demandes de déblocage d'activités. Les activités sont automatiquement bloquées lorsque le responsable de la comptabilité les signale comme facturées. Dans  ce  cas,  les  utilisateurs  disposent  d'un  formulaire  pour  demander  leur 
-
-déblocage  qui  génère  et  envoie  automatiquement  un  e-mail  avec  les  données  de l'activité, du projet, des consultants et les raisons de la demande. Le comptable dispose  d'une  vue  d'ensemble  des  demandes  avec  la  possibilité  de  filtrer  par client, par consultant, et par statut de traitement ainsi que des formulaires nécessaires pour les traiter et y répondre. 
-
+- Gestion des demandes de déblocage d'activités. Les activités sont automatiquement bloquées lorsque le responsable de la comptabilité les signale comme facturées. Dans  ce  cas,  les  utilisateurs  disposent  d'un  formulaire  pour  demander  leur déblocage  qui  génère  et  envoie  automatiquement  un  e-mail  avec  les  données  de l'activité, du projet, des consultants et les raisons de la demande. Le comptable dispose  d'une  vue d'ensemble  des  demandes  avec  la  possibilité  de  filtrer  par client, par consultant, et par statut de traitement ainsi que des formulaires nécessaires pour les traiter et y répondre. 
 - Gestion des absences. Ce module est utilisé par les utilisateurs en fonction de leurs rôles, un utilisateur avec le rôle "consultant" l'utilisera pour la création d'une demande de congé, qui sera automatiquement envoyée par email aux utilisateurs avec le rôle "RH", qui auront à leur disposition un aperçu de toutes les demandes générées, avec la possibilité de filtrer par dates, utilisateurs, et statut de traitement;  ainsi  qu'avec  les  formulaires  pour  leur  traitement  et  l'envoi automatique d'email avec la réponse. 
 
-Technologies Utilisées 
+## Technologies Utilisées 
 
 - VS Code 
 - Git Lab 
@@ -47,13 +40,11 @@ Technologies Utilisées
 - Alpine.js 
 - Tailwind CSS 
 
-Page de Accueil 
+## Page de Accueil 
 
 Login : 
 
-En arrivant sur le site, les utilisateurs trouvent une page pour se connecter en 
-
-entrant un email et un mot de passe, ce dernier champ possède un bouton qui permet de cacher ou d'afficher les caractères (1). Cette vue comporte également un lien d'accès au formulaire de réinitialisation du mot de passe (2). 
+En arrivant sur le site, les utilisateurs trouvent une page pour se connecter en entrant un email et un mot de passe, ce dernier champ possède un bouton qui permet de cacher ou d'afficher les caractères (1). Cette vue comporte également un lien d'accès au formulaire de réinitialisation du mot de passe (2). 
 
 ![](Aspose.Words.940a9f71-1902-4a53-a9b0-52b6af3660eb.001.jpeg)
 
@@ -67,7 +58,7 @@ En cliquant sur le bouton de réinitialisation du mot de passe, l'application (s
 
 ![](Aspose.Words.940a9f71-1902-4a53-a9b0-52b6af3660eb.004.jpeg)
 
-Tableau de Bord 
+## Tableau de Bord 
 
 Une fois identifié, l'utilisateur sera dirigé vers la page principale de l'application, qui comporte une barre de navigation, à l’intérieur de laquelle se trouvent les liens vers les différentes pages de gestion des tableaux ainsi que le retour à la page d’accueil. 
 
@@ -79,19 +70,19 @@ Cette page comporte également un bouton qui permet à l'utilisateur d'accéder 
 
 ![](Aspose.Words.940a9f71-1902-4a53-a9b0-52b6af3660eb.007.jpeg)
 
-Gestion des Rôles 
+## Gestion des Rôles 
 
 Cette  vue  fournit  une  liste  des  rôles  existants,  les  permissions  qui  leur  sont attribués et les boutons permettant la création, la vue, l'édition, ou la suppression de chacun d'entre eux.  
 
 ![](Aspose.Words.940a9f71-1902-4a53-a9b0-52b6af3660eb.008.jpeg)
 
-Gestion des Clients 
+## Gestion des Clients 
 
 Cette vue fournit une liste des clients existants dans la base de données, leurs données principales et les boutons d'action habituels. Elle comporte également un bouton permettant  d'importer  des  clients  à  partir  de  l'application  de  facturation  utilisée  par l'entreprise,  ainsi  qu'un  champ  de  recherche  permettant  de  réduire  le  nombre  de  clients répertoriés. Les résultats peuvent être triés par ordre croissant ou décroissant en cliquant sur les en-têtes des colonnes respectives. 
 
 ![](Aspose.Words.940a9f71-1902-4a53-a9b0-52b6af3660eb.009.jpeg)
 
-Gestion des Projets / Contrats 
+## Gestion des Projets / Contrats 
 
 Cette vue fournit une liste des projets existants dans la base de données, leurs données principales et les boutons d'action (créer, visualiser, modifier et supprimer).  
 
@@ -107,7 +98,7 @@ Le bouton de visualisation permet d'obtenir une vue détaillée des informations
 
 ![](Aspose.Words.940a9f71-1902-4a53-a9b0-52b6af3660eb.012.jpeg)
 
-Module Compte Rendu de Activités 
+## Module Compte Rendu de Activités 
 
 Cette  vue  affiche  la  liste  des  activités  réalisées  dans  le  cadre  des  projets  ou contrats de l'entreprise au cours d'un mois donné. Elle comporte deux champs de recherche et des boutons d'action. Ses données peuvent être triées par ordre croissant ou décroissant en cliquant  sur  les  en-têtes  de  colonne.  Au  bas  du  tableau,  vous  pouvez  voir  les  liens  de navigation et les informations (par page et totales) sur la charge enregistrée.  
 
@@ -125,7 +116,7 @@ Si une activité a déjà été facturée par l'entreprise, elle sera bloquée e
 
 Les formulaires de création et d'édition d'activités comportent un champ de recherche pour sélectionner le client et un second champ où sont affichés les contrats relatifs au client sélectionné. 
 
-Gestion de Conges 
+## Gestion de Conges 
 
 Cette vue affiche une liste des demandes de congé formulées par les utilisateurs, avec des boutons d'action (créer, consulter, modifier, supprimer), des champs de recherche, des liens  de  navigation,  des  filtres  (en  attente,  accepté,  rejeté,  tous)  et  un  sélecteur permettant de basculer entre la vue en liste et la vue en calendrier. 
 
@@ -135,7 +126,7 @@ Cette  vue  affiche  différentes  informations  en  fonction  du  rôle  de  l'
 
 ![](Aspose.Words.940a9f71-1902-4a53-a9b0-52b6af3660eb.017.jpeg)
 
-Envoi de courriers 
+## Envoi de courriers 
 
 L’application génère et envoie automatiquement des courriers électroniques à tous les utilisateurs concernés lorsque l'une des actions suivantes est effectuée : 
 
